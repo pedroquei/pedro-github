@@ -2,13 +2,15 @@
 #include <stdio.h>
 
 void main(){
-    int a;
+    int N, R;
     printf("Insira um número inteiro positivo ou negativo:");
-    scanf("%d",&a);
+    scanf("%d",&N);
     
-    if (a >= 0){
-        printf("\n O valor digitado é: %d", a);
+    if (N >= 0){
+        R = N;
+        printf("\n O valor digitado é: %d", R);
     } else {
-        printf("\n O valor digitado transformado em positivo é: %d", a*(-1));
+        R = N*(-1);
+        printf("\n O valor digitado transformado em positivo é: %d", R);
     }
 }

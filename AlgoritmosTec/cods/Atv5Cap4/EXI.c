@@ -7,7 +7,7 @@ void main(){
     int N, MA, ME, i = 1 ;
     bool Leitura = true;
 
-    while ( N <= 5 ){
+    while ( i <= 5 ){
 
         printf("Insira o %dº valor: ", i);
         scanf("%d", &N);
@@ -28,11 +28,5 @@ void main(){
 
         i++;
     }
-    
-        
-
-
-
    printf("Menor valor: %d Maior valor: %d", ME, MA);
-
 }
