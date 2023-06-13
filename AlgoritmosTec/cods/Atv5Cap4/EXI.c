@@ -1,21 +1,37 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include<stdbool.h>
 
 void main(){
     
-    int N[5], MA, ME;
+    int N, MA, ME, i = 1 ;
+    bool Leitura = true;
 
-    for ( int i = 1 ; i <= 5 ; i++ ){
-        ME = N[1];
+    while ( N <= 5 ){
+
         printf("Insira o %dº valor: ", i);
-        scanf("%d", &N[i]);
-        if (N[i] >= MA){
-            MA = N[i];
+        scanf("%d", &N);
+
+        if (Leitura == true)
+        {
+            ME = N;
+            MA = N;
         }
-        if (N[i] <= ME){
-            ME = N[i];
+        Leitura = false;
+        
+        if (N >= MA){
+            MA = N;
         }
+        if (N <= ME){
+            ME = N;
+        }
+
+        i++;
     }
+    
+        
+
+
 
    printf("Menor valor: %d Maior valor: %d", ME, MA);
 
