@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 void main(){
-    long long int S = 1;
-    int F = 1, N;
+    int F = 1, N, S;
     for(int i = 1; i <= 15 ; i++){
-        printf("Insira um número");
+        printf("Insira o %d° número: ", i);
         scanf("%d", &N);
         for(int x = 1; x <= N; x++){
             F *= x;
-            printf("%d", F);
         }
+        S += F;
+        F = 1;
     }
-    printf("O somatório é igual a %lld \n", S);
+    printf("\n A soma dos fatoriais é: %d", S);
 }

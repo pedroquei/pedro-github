@@ -3,11 +3,10 @@
 
 void main(){
     
-    int ANTERIOR = 0, ATUAL = 1, PROXIMO;
-    for(int i = 1; i <= 100 ; i+= 10){
-        printf("%d ", ANTERIOR);
-        PROXIMO  = ANTERIOR + ATUAL;
-        ANTERIOR = ATUAL;
-        ATUAL = PROXIMO;
+    int C;
+    float F;
+    for(C = 0; C <= 100 ; C+= 10){
+        F = ((C * 9)/5) + 32;
+        printf(" %d°C é igual a %.2f°F \n", C, F);
     }
 }
