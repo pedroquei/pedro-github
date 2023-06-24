@@ -13,7 +13,7 @@ void main(){
     printf("Insira a nota 4 do aluno:\n");
     scanf("%f", &N4);
     
-    M = (N1+N2+N3+N4)/2;
+    M = (N1+N2+N3+N4)/4;
 
     if (M >= 5){
         printf("\n O foi aprovado, sua média é: %.2f", M);
