@@ -14,6 +14,7 @@ void main(){
         printf("Os elementos da matriz A são:");
         printf("%d\n", A[i]);
     }
+    printf("\n");
     for (i = 1; i <= 15; i++)
     {
         B[i] = pow(A[i], 3);

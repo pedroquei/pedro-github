@@ -30,7 +30,7 @@ void listar(int f[], int tamanho){
     int i;
     for (i = 0; i < tamanho; i++){
         if (f[i] == n){
-            printf("\n valor encontrado no índice %d\n", i);
+            printf("\nValor encontrado no índice %d\n", i);
             return i;
             break;
         }
